@@ -10,7 +10,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn tsc"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
+  },
+  "dependencies": {
+    "typescript": "^4.4.4"
   }
 }

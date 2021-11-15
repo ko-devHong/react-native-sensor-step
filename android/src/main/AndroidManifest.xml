@@ -3,4 +3,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.sensor.step">
 
+    <!-- 안드로이드 발걸음 센서용도 -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 </manifest>
