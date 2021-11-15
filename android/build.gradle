@@ -101,8 +101,8 @@ def configureReactNativePom(def pom) {
 
         developers {
             developer {
-                id packageJson.author.username
-                name packageJson.author.name
+                id "hongdeveloper@gmail.com"
+                name "LEE_TAE_HONG"
             }
         }
     }
