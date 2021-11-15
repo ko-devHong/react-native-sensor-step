@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn tsc"
+    "build": "yarn tsc",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,13 +22,9 @@
   "keywords": [
     "react-native"
   ],
-  "author": {
-    "name": "LEE_TAE_HONG",
-    "email": "hongdeveloper@gmail.com"
-  },
+  "author": "LEE_TAE_HONG <hongdeveloper@gmail.com>",
   "license": "MIT",
   "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
     "react": ">=16.8.1",
     "react-native": ">=0.60.0-rc.0 <1.0.x"
@@ -38,5 +35,9 @@
   },
   "dependencies": {
     "typescript": "^4.4.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ko-devHong/react-native-sensor-step/issues"
+  },
+  "homepage": "https://github.com/ko-devHong/react-native-sensor-step#readme"
 }
