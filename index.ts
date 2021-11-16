@@ -5,8 +5,8 @@ import { NativeModules } from "react-native";
 const { RnSensorStep } = NativeModules;
 
 export enum SensorType {
-  COUNTER = "COUNTER",
-  DETECTOR = "DETECTOR",
+  COUNTER,
+  DETECTOR,
 }
 
 interface IRNSensorStep {

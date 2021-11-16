@@ -5,8 +5,8 @@ const react_native_1 = require("react-native");
 const { RnSensorStep } = react_native_1.NativeModules;
 var SensorType;
 (function (SensorType) {
-    SensorType["COUNTER"] = "COUNTER";
-    SensorType["DETECTOR"] = "DETECTOR";
+    SensorType[SensorType["COUNTER"] = 0] = "COUNTER";
+    SensorType[SensorType["DETECTOR"] = 1] = "DETECTOR";
 })(SensorType = exports.SensorType || (exports.SensorType = {}));
 const RNSensorStep = {
     start: (delay, sensorType) => {
