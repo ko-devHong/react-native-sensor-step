@@ -17,7 +17,7 @@
     "deploy": "npm install && npm run build && npm publish"
   },
   "publishConfig": {
-    "@leetaehong:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
