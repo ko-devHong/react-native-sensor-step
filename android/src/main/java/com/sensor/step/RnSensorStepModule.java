@@ -46,7 +46,7 @@ public class RnSensorStepModule extends ReactContextBaseJavaModule {
     public void start(int delay, String sensorType) {
         if (mRnSensorStepListener == null)
             mRnSensorStepListener = new RnSensorStepListener(mReactContext);
-        if(SensorType.COUNTER.equals(sensorType)) {
+        if(SensorType.COUNTER.equalsName(sensorType)) {
             mRnSensorStepListener.start(delay,SensorType.COUNTER);
         } else {
             mRnSensorStepListener.start(delay,SensorType.DETECTOR);
