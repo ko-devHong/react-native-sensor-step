@@ -4,15 +4,20 @@ import { NativeModules } from "react-native";
 //@ts-ignore
 const { RnSensorStep } = NativeModules;
 
+export enum SensorType {
+  COUNTER = "COUNTER",
+  DETECTOR = "DETECTOR",
+}
+
 interface IRNSensorStep {
-  start: (delay: number, sensorType: "COUNTER" | "DETECTOR") => void;
+  start: (delay: number, sensorType: SensorType) => void;
   stop: () => void;
   checkSensorPermission: () => Promise<boolean>;
   requestSensorPermission: () => void;
 }
 
 const RNSensorStep: IRNSensorStep = {
-  start: (delay: number, sensorType: "COUNTER" | "DETECTOR"): void => {
+  start: (delay, sensorType): void => {
     RnSensorStep.start(delay, sensorType);
   },
   stop: () => {
