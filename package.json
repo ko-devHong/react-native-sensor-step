@@ -1,19 +1,23 @@
 {
   "name": "react-native-sensor-step",
   "title": "React Native Sensor Step",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "TODO",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
     "README.md",
     "android",
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn tsc",
-    "deploy": "npm publish"
+    "deploy": "npm install && npm run build && npm publish"
+  },
+  "publishConfig": {
+    "@leetaehong:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
@@ -32,11 +36,10 @@
   },
   "devDependencies": {
     "react": "^16.9.0",
-    "react-native": "^0.61.5"
-  },
-  "dependencies": {
+    "react-native": "^0.61.5",
     "typescript": "^4.4.4"
   },
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/ko-devHong/react-native-sensor-step/issues"
   },
