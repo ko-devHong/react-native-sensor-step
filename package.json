@@ -16,9 +16,6 @@
     "build": "yarn tsc",
     "deploy": "npm install && npm run build && npm publish"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ko-devHong/react-native-sensor-step.git",
