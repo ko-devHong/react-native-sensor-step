@@ -27,8 +27,22 @@ public class RnSensorStepListener implements SensorEventListener {
     private int delay;
 
     public enum SensorType {
-        COUNTER,
-        DETECTOR
+        COUNTER ("COUNTER"),
+        DETECTOR ("DETECTOR");
+
+        private final String type;
+
+        private SensorType(String t) {
+            type = t;
+        }
+
+        public boolean equalsName(String otherType) {
+            return type.equals(otherType);
+        }
+
+        public String toString() {
+            return this.type;
+        }
     }
 
     public RnSensorStepListener(ReactApplicationContext reactContext) {

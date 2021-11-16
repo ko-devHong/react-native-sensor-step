@@ -1,6 +1,6 @@
 export declare enum SensorType {
-    COUNTER = 0,
-    DETECTOR = 1
+    COUNTER = "COUNTER",
+    DETECTOR = "DETECTOR"
 }
 interface IRNSensorStep {
     start: (delay: number, sensorType: SensorType) => void;
