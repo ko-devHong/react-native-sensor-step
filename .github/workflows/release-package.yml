@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/react-native-sensor-step
+      - run: npm config set registry https://registry.npmjs.org/react-native-sensor-step
       - run: npm ci
       - run: npm publish
         env:
