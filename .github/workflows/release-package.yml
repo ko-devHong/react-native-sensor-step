@@ -1,8 +1,9 @@
 name: react-native-sensor-step Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
