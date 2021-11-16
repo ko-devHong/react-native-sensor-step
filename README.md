@@ -40,6 +40,7 @@ const App = () => {
 
   useEffect(() => {
     // you select sensor type COUNTER or DETECTOR
+    // you set delay millisecond
     RNSensorStep.start(1000, SensorType.COUNTER);
     DeviceEventEmitter.addListener("StepCounter", async (data) => {
       setStepCount(data.steps);
