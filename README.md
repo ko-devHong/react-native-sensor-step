@@ -4,7 +4,11 @@
 
 `$ npm install react-native-sensor-step --save`
 
-### Mostly automatic installation
+### Automatic installation (Android only)
+
+- React Native 0.60+
+
+### React Native <= 0.59
 
 `$ react-native link react-native-sensor-step`
 
