@@ -27,7 +27,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm version patch
+      - run: git config --global user.email "dea972@naver.com"
+      - run: git config --global user.name "ko-devHong"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

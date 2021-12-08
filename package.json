@@ -1,7 +1,7 @@
 {
   "name": "react-native-sensor-step",
   "title": "React Native Sensor Step",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TODO",
   "main": "index.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn tsc",
-    "deploy": "npm install && npm run build && npm publish"
+    "deploy": "npx bump && yarn build && git add . && git commit -m \"$message\" && git push"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,12 @@
     "baseUrl": "https://github.com/ko-devHong/react-native-sensor-step"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "android",
+    "react-native-sensor",
+    "react-native-sensor-manager",
+    "sensor",
+    "step-counter"
   ],
   "author": "LEE_TAE_HONG <hongdeveloper@gmail.com>",
   "license": "MIT",
